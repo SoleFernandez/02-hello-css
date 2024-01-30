@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Dummy</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!--The <style> element is used to add page-specific CSS rules to individual HTML documents. The <style> element always lives in the <head> of a web page, which makes sense because it’s metadata, not actual content.-->
+        <style>
+            body {
+                color: #0000ff; /* Blue */
+            }
+        </style>
+
+    </head>
+
+    <!--The CSS hierarchy for every web page looks like this:
+
+* The browser’s default stylesheet
+* User-defined stylesheets
+* External stylesheets (that’s us)
+* Page-specific styles (that’s also us)
+* Inline styles (that could be us, but it never should be)-->
+
+    <body>
+        <h1>Dummy</h1>
+
+        <p>This is a dummy page that help us demonstrate reusable CSS stylesheets. <a href="hello-css.html">Go back</a>.</p>
+
+        <p>Want to try crossing out an <a href="nowhere.html" style="color: #990000; text-decoration: line-through;">obsolete link</a>? This is your chance!</p>
+
+        <!--Inline styles are the most specific way to define CSS. The color and text-decoration properties we defined here trump everything. Even if we went back and added a text-decoration: none to our <style> element, it wouldn’t have any effect.-->
+
+    </body>
+</html>

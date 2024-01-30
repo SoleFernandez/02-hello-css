@@ -1,0 +1,31 @@
+/* CSS properties are kind of like HTML attributes in that they both deal with key-value pairs. Except, here we’re defining presentational information instead of contributing to the semantic meaning of the underlying content. */
+
+body {
+    color: #414141; /*Dark gray */
+    background-color: #eeeeee; /* Light gray */
+    font-size: 18px;
+}
+
+/* This sets our base font size for the document to 18px, then says that our <h1> elements should be twice that size and our <h2>’s should be 1.6 times bigger. If we (or the user) ever wanted to make the base font bigger or smaller, em units would allow our entire page to scale accordingly. */
+
+h1 {
+    /* font-size: 36px; */
+    font-size: 2em;
+}
+h2 {
+    /* font-size: 28px; */
+    font-size: 1.6em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: left;
+}
+/* It’s important to understand page-specific and inline styles because you’ll most definitely encounter them in the wild, but external stylesheets are by far the best place to define the appearance of your website. */
+
